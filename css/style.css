@@ -55,9 +55,15 @@ body {
     color: white;
     background: red;
 }
+.crvena {
+  color:  #c30000;
+}
 .bijeli {
   color: #fff;
   font-size: 1.6rem;
+}
+.zeleni {
+  color: green;
 }
 .napomena {
     font-size: 80%;
