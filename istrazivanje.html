@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Danijel Gavranović">
+    <meta name="author" content="">
 
     <title>Sociologija - nastavni materijal</title>
-    <link href="css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/4-col-portfolio.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,6 +23,11 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .navbar a {
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,17 +49,17 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav desno">
                     <li>
-                        <a href="istrazivanje.html"><i class="fa fa-bar-chart-o ikonica"></i> <span class="tekst-izbornik">Istraživanje</span></a>
+                        <a href="istrazivanje.html" class="active"><i class="fa fa-bar-chart-o ikonica"></i> <span class="tekst-izbornik">Istraživanje</span></a>
                     </li>
-                    <li title="Prezentacije">
+                    <li>
                         <a href="prezentacije.html"><i class="fa fa-image ikonica"></i> <span class="tekst-izbornik">Prezentacije</span></a>
                     </li>
                     <li>
-                        <a href="dodatni-materijal.html" class="active" title="Dodatni materijali"><i class="fa fa-hand-spock-o ikonica"></i> <span class="tekst-izbornik">Dodatni materijal</span></a>
+                        <a href="dodatni-materijal.html"><i class="fa fa-hand-spock-o ikonica"></i> <span class="tekst-izbornik">Dodatni materijali</span></a>
                     </li>
-                    <li><a href="stare-zadace.html" title="Stare zadaće"><i class="fa fa-file-word-o ikonica"></i> <span class="tekst-izbornik">Stare zadaće</span></a> </li>
+                    <li><a href="stare-zadace.html"><i class="fa fa-file-word-o ikonica"></i> <span class="tekst-izbornik">Stare zadaće</span></a> </li>
                     <li>
-                        <a href="pitaj-profesora.html" title="Pitaj profesora"><i class="fa fa-question-circle ikonica" ></i> <span class="tekst-izbornik">Pitaj profesora</span></a>
+                        <a href="pitaj-profesora.html"><i class="fa fa-question-circle ikonica"></i> <span class="tekst-izbornik">Pitaj profesora</span></a>
                     </li>
                 </ul>
             </div>
@@ -65,27 +71,22 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Dodatni materijal</h1>
-                <p class="literatura">dodatni nastavni i nenastavni materijal iz sociologije</p>
-                <br>
-
+                <h3>Korisni linkovi</h3>
+                <ul>
+                    <li><a href="#">Upute za pisanje rada</a></li>
+                    <li><a href="#">Malo sociološko istraživanje</a></li>
+                    <li><a href="#">Pravila citiranja literature</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="alert active bijeli">Ovdje će se pojavit linkovi na google dokumente u koje ćete onda upisivati djelove rada ovisno o fazi izrade rada</p>
             </div>
         </div>
         <!-- /.row -->
-
-        <div class="row">
-            <ol>
-                <li><a href="data/dodatni_materijal/socioloska_imaginacija.pdf">Sociološka imaginacija (dodatno objašnjenje) [PDF]</a></li>
-                <li><a href="https://drive.google.com/file/d/0B3j3fkaAq7drekJ0VFFSZXdLOUE/view?usp=sharing">Zdravorazumsko vs. znanstveno [VIDEO]</a></li>
-                <li><a href="https://www.youtube.com/watch?v=Ab9WC1toEBU">Na rubu znanosti - Komercijalizacija straha [VIDEO]</a></li>
-                <li><a href="https://embed.ted.com/talks/lang/hr/joachim_de_posada_says_don_t_eat_the_marshmallow_yet">Don't eat marshmallow yet (objašnjenje testa) [VIDEO]</a></li>
-                <li><a href="https://www.youtube.com/watch?v=QX_oy9614HQ">The Marshmallow Test (kraća verzija) [VIDEO]</a></li>
-            </ol>
-        </div>
-
 
         <div class="clearfix"></div>
         <div class="dashed"></div>
@@ -103,15 +104,14 @@
     </div>
     <!-- /.container -->
 
+    <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-    </script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
