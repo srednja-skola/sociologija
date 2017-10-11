@@ -55,7 +55,10 @@ body {
     color: white;
     background: red;
 }
-
+.bijeli {
+  color: #fff;
+  font-size: 1.6rem;
+}
 .napomena {
     font-size: 80%;
     font-weight: bold;
