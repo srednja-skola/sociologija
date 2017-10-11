@@ -27,6 +27,20 @@
         .navbar a {
             text-transform: uppercase;
         }
+
+        .table tr:last-child {
+            border-bottom: 1px solid #ccc;
+        }
+        .table tr:first-child {
+          color:#000;
+          background: #ccc;
+        }
+        .table {
+        font-size: 1.5rem;
+        }
+        .fa {
+          font-size: 2rem;
+        }
     </style>
 </head>
 
@@ -70,23 +84,90 @@
 
     <!-- Page Content -->
     <div class="container">
-
         <div class="row">
             <div class="col-lg-12">
-                <h3>Korisni linkovi</h3>
-                <ul>
-                    <li><a href="#">Upute za pisanje rada</a></li>
-                    <li><a href="#">Malo sociološko istraživanje</a></li>
-                    <li><a href="#">Pravila citiranja literature</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p class="alert active bijeli">Ovdje će se pojavit linkovi na google dokumente u koje ćete onda upisivati djelove rada ovisno o fazi izrade rada</p>
+                <h3>Tijek izrade rada</h3>
+                <table class="table">
+                    <tr>
+                        <th>Faza</th>
+                        <th>Zadatak</th>
+                        <th>Datum (rok)</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>definiranje problema istraživanja (odabir teme)</td>
+                        <td>12.10. - 19.10.</td>
+                        <td><i class="fa fa-square-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>upoznavanje s dostupnom literaturom</td>
+                        <td>19.10. - 26.10.</td>
+                        <td><i class="fa fa-square-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>sastavljanje upitnika (anketnog lisića)</td>
+                        <td>26.10. - 2.11.</td>
+                        <td><i class="fa fa-square-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>ispravljanje anketa, prikupljanje i analiza podataka</td>
+                        <td>2.11. - 16.11.</td>
+                        <td><i class="fa fa-square-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>pisanje rada, sinteza podataka dobivenih istraživanjem</td>
+                        <td>16.11. - 30.11.</td>
+                        <td><i class="fa fa-square-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>prezentiranje radova</td>
+                        <td>19.12. i 21.12.</td>
+                        <td><i class="fa fa-square-o"></i></td>
+                    </tr>
+                </table>
             </div>
         </div>
         <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="crvena">Korisni linkovi </h3>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>Upute <i class="fa fa-file-pdf-o"></i></h4>
+                    <ul>
+                        <li><a href="data/istrazivanje/upute_za_pisanje_rada.pdf">Upute za pisanje rada</a></li>
+                        <li><a href="data/istrazivanje/malo_soc_istrazivanje.pdf">Malo sociološko istraživanje</a></li>
+                        <li><a href="data/istrazivanje/model_soc_istrazivanja.pdf">Model sociološkog istraživanja</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>Radovi prijašnjih generacija <i class="fa fa-file-pdf-o"></i></h4>
+                    <ul>
+                        <li><a href="data/istrazivanje/dosadasni_radovi/Srednjoskolci_i_odabir_studija.pdf">Srednjoškolci i odabir studija</a></li>
+                        <li><a href="data/istrazivanje/dosadasni_radovi/Mladi_i_izvanskolske_aktivnosti.pdf">Mladi i izvanškolske aktivnosti</a></li>
+                        <li><a href="data/istrazivanje/dosadasni_radovi/Madi_i_moderne_ovisnosti.pdf">Mladi i moderne ovisnosti</a></li>
+                        <li><a href="data/istrazivanje/dosadasni_radovi/Mladi_i_alkohol.pdf">Mladi i alkohol</a></li>
+                        <li><a href="data/istrazivanje/dosadasni_radovi/Utjecaj_roditelja_na_mlade.pdf">Utjecaj roditelja na mlade</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>Linkovi na dokumente pojedine grupe <i class="fa fa-file-word-o"></i> </h4>
+                    <ul>
+                        <li><a href="#">Grupa A </a></li>
+                        <li><a href="#">Grupa B</a></li>
+                        <li><a href="#">Grupa C</a></li>
+                        <li><a href="#">Grupa D</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
 
         <div class="clearfix"></div>
         <div class="dashed"></div>
