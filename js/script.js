@@ -1,6 +1,7 @@
 // footer copyleft (nova godina se mjenja automatski)
 var copyleft = document.querySelector(".copyleft"),
-  izbornik = document.querySelector(".navbar");
+  izbornik = document.querySelector(".navbar"),
+  pokrivac = document.querySelector(".pokrivac");
 // copyleft.innerHTML = "Copyleft <span class='cl'>&copy;</span> " + new Date().getFullYear() + ". - Danijel Gavranović, prof.";
 
 // ------- Propeller Ripple Effect component js function ------- //
@@ -95,6 +96,19 @@ route.add("", function() {
     console.log("nema aktivnog linka");
 }
 });
-
+route.add("pptx.html", function() {
+  // footer s linkom na mom imenu
+  function sifra() {
+    var unos = prompt("Upiši šifru kako bi vidio sadržaj");
+    if (unos === null || unos === undefined || unos === "") {
+      pokrivac.classList = "pokrivac";
+    } else if (unos === "alfa") {
+      pokrivac.classList = "";
+    } else {
+      pokrivac.classList = "pokrivac";
+    }
+  }
+  sifra();
+});
 // pozivanje route funkcije
 route.run();
