@@ -93,10 +93,10 @@ if (window.location.href.indexOf("istrazivanje.html") > -1) {
   $(".nav > li:nth-child(2) > a:nth-child(1)").addClass("active");
 } else if (window.location.href.indexOf("dodatni-materijal.html") > -1) {
   $(".nav > li:nth-child(3) > a:nth-child(1)").addClass("active");
-} else if (window.location.href.indexOf("stare-zadace.html") > -1) {
-  $(".nav > li:nth-child(4) > a:nth-child(1)").addClass("active");
+// } else if (window.location.href.indexOf("stare-zadace.html") > -1) {
+//   $(".nav > li:nth-child(4) > a:nth-child(1)").addClass("active");
 } else if (window.location.href.indexOf("pitaj-profesora.html") > -1) {
-  $(".nav > li:nth-child(5) > a:nth-child(1)").addClass("active");
+  $(".nav > li:nth-child(4) > a:nth-child(1)").addClass("active");
 } else {
   console.log("nema aktivnog linka");
 }
