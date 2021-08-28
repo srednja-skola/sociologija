@@ -104,7 +104,9 @@ body {
   font-size: 150%;
   padding-bottom: 0
 }
-
+ .fa {
+     font-size: 2rem;
+}
 /*------------------- responsive dio -------------*/
 @media screen and (max-width: 768px) {
     .btn {
