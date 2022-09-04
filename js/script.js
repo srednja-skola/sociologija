@@ -110,14 +110,14 @@ if (window.location.href.indexOf("prezentacije.html") > -1) {
 } else if (window.location.href.indexOf("dodatni-materijal.html") > -1) {
   $(".nav > li:nth-child(3) > a:nth-child(1)").addClass("active");
 } else if (window.location.href.indexOf("pitaj-profesora.html") > -1) {
-  $(".nav > li:nth-child(4) > a:nth-child(1)").addClass("active");*/ 
+  $(".nav > li:nth-child(4) > a:nth-child(1)").addClass("active");
 // } else if (window.location.href.indexOf("stare-zadace.html") > -1) {
 //   $(".nav > li:nth-child(4) > a:nth-child(1)").addClass("active");
 // } else if (window.location.href.indexOf("pitaj-profesora.html") > -1) {
 //   $(".nav > li:nth-child(4) > a:nth-child(1)").addClass("active");
 } else {
   console.log("nema aktivnog linka");
-}
+}*/ 
 
 // aktivni link na izborniku (za full izbornik)
 //   if (window.location.href.indexOf("ispitivanje.html") > -1) {
