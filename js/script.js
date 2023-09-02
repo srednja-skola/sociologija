@@ -99,7 +99,7 @@ if (window.location.href.indexOf("prezentacije.html") > -1) {
 } else if (window.location.href.indexOf("dodatni-materijal.html") > -1) {
   $(".nav > li:nth-child(2) > a:nth-child(1)").addClass("active");
 } else {
-  console.log("nema aktivnog linka");
+  console.log("nema aktivnog linka /bug");
 }
  
     
