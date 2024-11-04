@@ -94,17 +94,17 @@ izbornik.innerHTML = "<div class='container'><div class='navbar-header'><button 
 */
 
 // aktivni link u izborniku (manji izbornik na početku šk. godine bez linka istraživanje i pitaj profesora)
-if (window.location.href.indexOf("prezentacije.html") > -1) {
+/* if (window.location.href.indexOf("prezentacije.html") > -1) {
   $(".nav > li:nth-child(1) > a:nth-child(1)").addClass("active");
 } else if (window.location.href.indexOf("dodatni-materijal.html") > -1) {
   $(".nav > li:nth-child(2) > a:nth-child(1)").addClass("active");
 } else {
   console.log("nema aktivnog linka");
-}
+} */
  
     
 // aktivni link u izborniku (s linkom na istraživanje)
-/*  if (window.location.href.indexOf("istrazivanje.html") > -1) {
+if (window.location.href.indexOf("istrazivanje.html") > -1) {
   $(".nav > li:nth-child(1) > a:nth-child(1)").addClass("active");
 } else if (window.location.href.indexOf("prezentacije.html") > -1) {
   $(".nav > li:nth-child(2) > a:nth-child(1)").addClass("active");
@@ -118,7 +118,7 @@ if (window.location.href.indexOf("prezentacije.html") > -1) {
 //   $(".nav > li:nth-child(4) > a:nth-child(1)").addClass("active");
 } else {
   console.log("nema aktivnog linka");
-}   */
+}  
 
 // aktivni link na izborniku (za full izbornik)
 //   if (window.location.href.indexOf("ispitivanje.html") > -1) {
