@@ -76,7 +76,7 @@ var route = {
 
 route.add("", function() {
   // footer
-  copyleft.innerHTML = "Copyleft <span class='cl'>&copy;</span> " + new Date().getFullYear() + ". - Danijel Gavranović, prof.";
+  copyleft.innerHTML = "Copyleft <span class='cl'>&copy;</span> " + new Date().getFullYear() + ".";
   // izbornik
 
  // izbornik master (bez linka na istraživanje i pitaj prof.)
@@ -149,5 +149,6 @@ route.add("pptx.html", function() {
 });
 // pozivanje route funkcije
 route.run();
+
 
 
