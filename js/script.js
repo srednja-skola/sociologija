@@ -2,7 +2,7 @@
 var copyleft = document.querySelector(".copyleft"),
   izbornik = document.querySelector(".navbar"),
   pokrivac = document.querySelector(".pokrivac");
-// copyleft.innerHTML = "Copyleft <span class='cl'>&copy;</span> " + new Date().getFullYear() + ". - Danijel Gavranović, prof.";
+// copyleft.innerHTML = "Copyleft <span class='cl'>&copy;</span> " + new Date().getFullYear() + ". - ovdje dodaj ime autora za copyleft";
 
 // ------- Propeller Ripple Effect component js function ------- //
 $(document).ready(function() {
@@ -149,6 +149,7 @@ route.add("pptx.html", function() {
 });
 // pozivanje route funkcije
 route.run();
+
 
 
 
