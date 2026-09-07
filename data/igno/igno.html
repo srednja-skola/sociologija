@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gapminder Kviz – Koliko znamo o svijetu?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌍 Gapminder Kviz</h1>
+      <p>Koliko zapravo znamo o svijetu?</p>
+    </header>
+
+    <!-- START SCREEN -->
+    <div id="start-screen" class="screen active">
+      <div class="card">
+        <div class="start-content">
+          <h2>Testiraj svoje znanje</h2>
+          <p>
+            Ovaj kviz sadrži 13 pitanja o globalnim trendovima, siromaštvu, zdravlju, 
+            obrazovanju i stanovništvu. Pitanja su preuzeta iz Gapminderovih istraživanja 
+            o uobičajenim zabludama. Spremni?
+          </p>
+          <button class="btn-primary" onclick="startQuiz()">Započni kviz</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div id="quiz-screen" class="screen">
+      <div class="card">
+        <div class="progress-wrap">
+          <div class="progress-info">
+            <span id="progress-text">Pitanje 1 od 13</span>
+            <span id="score-live">Bodovi: 0</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="question-number" id="q-number">Pitanje 1</div>
+        <div class="question-text" id="q-text"></div>
+        <div id="q-image-container"></div>
+
+        <div class="options" id="options"></div>
+
+        <div class="feedback" id="feedback"></div>
+
+        <div class="btn-row">
+          <button class="btn-primary" id="next-btn" disabled onclick="nextQuestion()">Sljedeće pitanje</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULT SCREEN -->
+    <div id="result-screen" class="screen">
+      <div class="card">
+        <div class="result-content">
+          <h2>Rezultat</h2>
+          <div class="score-circle">
+            <span class="score-num" id="final-score">0</span>
+            <span class="score-label">od 13</span>
+          </div>
+          <div class="result-message" id="result-message"></div>
+          <div class="result-detail" id="result-detail"></div>
+
+          <div class="review-section">
+            <h3>Pregled odgovora</h3>
+            <ul class="review-list" id="review-list"></ul>
+          </div>
+
+          <div class="btn-row-result">
+            <button class="btn-primary" onclick="restartQuiz()">Pokušaj ponovo</button>
+            <button class="btn-secondary" id="toggle-stats-btn" onclick="toggleStats()">Prikaži statistiku</button>
+            <button class="btn-danger" onclick="clearStats()">Obriši statistiku</button>
+          </div>
+
+          <div class="stats-section" id="stats-section">
+            <h3>Zajednička statistika</h3>
+            <div class="stats-summary" id="stats-summary"></div>
+            <ul class="stats-list" id="stats-list"></ul>
+            <p style="font-size:0.8rem;color:var(--muted);margin-top:12px;">
+              Statistika se sprema lokalno u ovom pregledniku (localStorage). 
+              Svaki završeni kviz se broji kao jedan ispitanik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Pitanja temeljena na Gapminder / Factfulness istraživanjima · Točni odgovori označeni u izvornom dokumentu
+    </footer>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
